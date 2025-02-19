@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تسجيل الدخول للحصول على موطه مجانية</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>احصل على موطه مجانية</h2>
+    <form id="loginForm">
+      <input type="email" placeholder="ادخل بريدك الإلكتروني" required>
+      <input type="password" placeholder="ادخل كلمة المرور" required>
+      <button type="submit" class="btn">Login</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      window.location.href = "success.html"; 
+    });
+  </script>
+</body>
+</html>
